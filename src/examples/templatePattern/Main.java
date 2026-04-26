@@ -15,7 +15,7 @@ public class Main {
          * 3. Créer des méthodes abstraites dans Tarte pour les étapes spécifiques à chaque recette
          * (par exempte: preparerGarniture(), ajouterGarniture())
          * 4. Implémenter les méthodes abstraites dans les classes TartePomme & Quiche
-         * 5. Implémentez la méthode preparer() dans la classe Tarte
+         * 5. Implémentez la méthode preparer() dans la classe Tarte (template method) qui appelle les différentes étapes de préparation dans le bon ordre
          *
          * 6. Pour l'exemple, créez une nouvelle recette TarteNoisettes qui étend Tarte
          */
