@@ -12,7 +12,8 @@ public class Game {
     }
 
     // Static method to get the singleton instance
-    public Game getInstance(){
+    public static Game getInstance(){
+        // lazy initialization: create the instance only when it is needed
         if(Game.instance == null){
             Game.instance = new Game();
         }
