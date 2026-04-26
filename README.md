@@ -1,2 +1,3 @@
-# DonInf2-examples-2025
-A few code examples for the DonInf2 2025 course
+# Exercice Singleton
+Dans le dossier `src/examples/singleton` transformez la classe `Game` en singleton.
+Le corrigé se trouve dans la branche `singleton-pattern-exercice-correction`.
