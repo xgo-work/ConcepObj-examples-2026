@@ -28,4 +28,4 @@ Le point de départ de cet exercice est la fin de l'exercice sur le template met
 
 # Exemples
 ## Observer Pattern & Events
-Toy exemple d'observer pattern en javascript
+Toy exemple d'observer pattern en javascript qui traite des événements de click . Branche `observer-pattern`
