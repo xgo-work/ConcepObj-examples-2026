@@ -2,6 +2,19 @@
 
 Ce repository contient quelques exemples et exerices liés aux éléments abordés pendant le cours. Chaque exercice a une branche de départ avec la donnée et le code de départ ainsi qu'une branche contenant le code terminé.
 
+## Checkout une branche
+Commencez par cloner le repository
+
+`git clone git@github.com:xgo-work/ConcepObj-examples-2026.git`
+
+Placez vous dans le dossier du repository
+
+`cd ConcepObj-examples-2026`
+
+Lorsqu'un repository est cloné il vous place par défaut sur la branche main, pour changer de branche utilisez la commande
+
+`git checkout nom-de-la-branche`
+
 # Exercices
 
 ## Shapes
