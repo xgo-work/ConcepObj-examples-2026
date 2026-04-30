@@ -3,7 +3,7 @@ package examples.singleton;
 // Singleton exercice correction
 public class Game {
 
-    // Singleton instance
+    // Singleton static instance
     private static Game instance;
 
     // private constructor to prevent instantiation
