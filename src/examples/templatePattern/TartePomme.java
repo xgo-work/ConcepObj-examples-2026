@@ -2,6 +2,10 @@ package examples.templatePattern;
 
 public class TartePomme extends Tarte{
 
+    public TartePomme() {
+        super(200, 45);
+    }
+
     private void ajouterPommes() {}
     private void couperPommes() {}
 

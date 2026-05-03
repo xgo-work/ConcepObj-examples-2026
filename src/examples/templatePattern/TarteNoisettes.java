@@ -2,6 +2,10 @@ package examples.templatePattern;
 
 public class TarteNoisettes extends Tarte {
 
+    public TarteNoisettes() {
+        super(180, 30);
+    }
+
     private void ajouterNoisettes() {
         System.out.println("Noisettes ajoutées");
     }
