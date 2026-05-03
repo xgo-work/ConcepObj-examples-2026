@@ -2,6 +2,10 @@ package examples.dependencyInjection;
 
 public class Quiche extends Tarte{
 
+    public Quiche() {
+        super(190, 40);
+    }
+
     private void ajouterLaitetOeufs() {}
 
     private void raperFromage() {}
