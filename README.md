@@ -17,8 +17,9 @@ Le code fourni contient les classes TartePomme et Quiche qui implémentent l'int
    *(par exemple : `preparerGarniture()`, `ajouterGarniture()`)*
 4. Implémenter ces méthodes abstraites dans `TartePomme` et `Quiche`
 5. Implémenter la méthode `preparer()` dans `Tarte`
-   Cette méthode représente la **template method** et doit appeler les différentes étapes dans le bon ordre
-6. BONUS : Créer une nouvelle recette `TarteNoisettes` qui étend `Tarte`
+   Cette méthode représente la **template method** et doit appeler les différentes étapes dans le bon ordre.
+6. BONUS : Créer un constructeur dans `Tarte` qui prend température et durée de cuisson en paramètre et les utiliser dans la méthode preparer(). Modifier les classes `TartePomme` et `Quiche` pour passer ces paramètres.
+7. BONUS : Pour l'exemple, créer une nouvelle recette TarteNoisettes qui étend `Tarte`
 
 ## Branches de correction
 
