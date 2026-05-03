@@ -9,27 +9,31 @@ public class Tarte implements IRecette {
     private IGarnitureTarte garniture;
     private MouleATarte moule;
     private String nomRecette;
+    private int dureeCuisson;
+    private int temperatureFour;
 
-    public Tarte(IPate pate, IGarnitureTarte garniture, String nomRecette) {
+    protected Tarte(int temperatureFour, int dureeCuisson, IPate pate, IGarnitureTarte garniture, String nomRecette) {
+        this.temperatureFour = temperatureFour;
+        this.dureeCuisson = dureeCuisson;
         this.pate = pate;
         this.garniture = garniture;
         this.nomRecette = nomRecette;
     }
 
-    // Méthode template
     @Override
     public void preparer() {
-        this.prechaufferFour(200);
         // logique de preparation de la pate encapsulée dans IPate
         this.pate.preparer();
+        this.prechaufferFour(temperatureFour);
         this.pate.abaisser();
 
         this.preparerMoule();
-        // logique garniture encapsulée dans garniture
+
+        // logique garniture encapsulée dans IGarniture
         this.garniture.preparerGarniture();
         this.garniture.ajouterGarniture();
 
-        this.enfourner(45);
+        this.enfourner(dureeCuisson);
         while (!verifierCuisson()) {
             this.enfourner(5);
         }
