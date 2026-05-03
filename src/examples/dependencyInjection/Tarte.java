@@ -7,24 +7,28 @@ public abstract class Tarte implements IRecette {
 
     private IPate pate;
     private MouleATarte moule;
+    private int dureeCuisson;
+    private int temperatureFour;
 
-    protected Tarte(IPate pate) {
+    protected Tarte(int temperatureFour, int dureeCuisson, IPate pate) {
+        this.temperatureFour = temperatureFour;
+        this.dureeCuisson = dureeCuisson;
         this.pate = pate;
     }
 
     // Méthode template
     @Override
     public void preparer() {
-        this.prechaufferFour(200);
         // logique de preparation de la pate encapsulée dans IPate
         this.pate.preparer();
+        this.prechaufferFour(temperatureFour);
         this.pate.abaisser();
 
         this.preparerMoule();
         this.preparerGarniture();
         this.ajouterGarniture();
 
-        this.enfourner(45);
+        this.enfourner(dureeCuisson);
         while (!verifierCuisson()) {
             this.enfourner(5);
         }

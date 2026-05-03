@@ -3,7 +3,7 @@ package examples.dependencyInjection;
 public class TartePomme extends Tarte{
 
     public TartePomme(IPate pate) {
-        super(pate);
+        super(200, 45, pate);
     }
 
     private void ajouterPommes() {}
