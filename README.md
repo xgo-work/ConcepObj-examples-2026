@@ -8,7 +8,7 @@ Refactoriser le code afin de découpler les classes concrètes (`PateBrisee`, `P
 
 ## Consignes
 
-Le code fourni contient une hiérarchie de classes de recettes de tartes issues de l'exercice Template Method. Les dépendances (pâte, garniture) sont instanciées directement dans les classes. L'objectif est de les injecter de l'extérieur.
+Le code fourni contient une hiérarchie de classes de recettes de tartes issues de l'exercice Template Method. Les dépendances (pâte, garniture) sont instanciées directement dans les classes. L'objectif est de les injecter de l'extérieur et ainsi de mettre en pratique l'injection de dépendance.
 
 ### Partie I — Injection de la pâte
 
@@ -17,12 +17,12 @@ Le code fourni contient une hiérarchie de classes de recettes de tartes issues 
    - `void abaisser()`
    - `boolean estCuite()`
 2. Modifier la classe `PateBrisee` pour qu'elle implémente `IPate`
-3. Faire de même avec `PateFeuilletee`
+3. Faire de même avec la classe `PateFeuilletee`
 4. Modifier la classe `Tarte` :
-   - le constructeur prend une `IPate` en paramètre
+   - le constructeur prend une `IPate` en paramètre (Injection de dépendance par constructeur)
    - la variable d'instance devient une `IPate`
-5. Adapter les sous-classes (`TartePomme`, `TarteNoisettes`, `Quiche`) pour qu'elles aient un constructeur prenant une `IPate`
-6. Retirer la méthode `preparerPate()` de `Tarte` et adapter la méthode `preparer()`
+5. Adapter les sous-classes (`TartePomme`, `TarteNoisettes`, `Quiche`) pour qu'elles aient un constructeur prenant une `IPate` en paramètre
+6. Retirer la méthode `preparerPate()` de `Tarte` et adapter la méthode `preparer()` en utilisant la IPate
 7. Adapter le `main` pour invoquer les constructeurs avec une `IPate`, par exemple :
    ```java
    new TartePomme(new PateFeuilletee());
@@ -64,4 +64,4 @@ Comprendre comment l'**injection de dépendances par constructeur** permet de :
 - découpler les classes et réduire les dépendances directes entre elles
 - faciliter la substitution d'implémentations (ex. changer de pâte sans modifier la tarte)
 - améliorer la testabilité du code
-- respecter le principe d'inversion de dépendances (DIP)
+- appliquer le principe d'inversion de dépendances (DIP)

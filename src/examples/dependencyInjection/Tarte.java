@@ -42,8 +42,7 @@ public abstract class Tarte implements IRecette {
     }
 
     protected void preparerPate() {
-        String[] ingredients = new String[] {"farine", "beurre", "eau"};
-        this.pate = new PateBrisee(ingredients);
+        this.pate = new PateBrisee();
     }
 
     protected void preparerMoule() {

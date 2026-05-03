@@ -6,14 +6,14 @@ public class Quiche extends Tarte{
         super(190, 40);
     }
 
-    private void ajouterLaitetOeufs() {}
+    private void ajouterLaitEtOeufs() {}
 
     private void raperFromage() {}
 
     @Override
     protected void preparerGarniture() {
         raperFromage();
-        ajouterLaitetOeufs();
+        ajouterLaitEtOeufs();
     }
 
     @Override
