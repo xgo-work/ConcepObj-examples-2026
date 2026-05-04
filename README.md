@@ -22,7 +22,7 @@ Le code fourni contient une hiérarchie de classes de recettes de tartes issues 
    - le constructeur prend une `IPate` en paramètre (Injection de dépendance par constructeur)
    - la variable d'instance devient une `IPate`
 5. Adapter les sous-classes (`TartePomme`, `TarteNoisettes`, `Quiche`) pour qu'elles aient un constructeur prenant une `IPate` en paramètre
-6. Retirer la méthode `preparerPate()` de `Tarte` et adapter la méthode `preparer()` en utilisant la IPate
+6. Retirer la méthode `preparerPate()` de `Tarte` et adapter la méthode `preparer()` en utilisant la IPate. Vous devrez également adapter la signature de `MouleATarte`.
 7. Adapter le `main` pour invoquer les constructeurs avec une `IPate`, par exemple :
    ```java
    new TartePomme(new PateFeuilletee());
