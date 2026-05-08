@@ -8,7 +8,7 @@ Ouvrez ce playground
 
 Essayez en cliquant sur l'élément **click me**
 
-### Comment ça fonctionne ?
+### Comment ça fonctionne ?
 
 ```
 document.getElementById("demo").addEventListener("click", myFunction);
